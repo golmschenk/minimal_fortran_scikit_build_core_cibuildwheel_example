@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.25)
+project(minimal_fortran_scikit_build_core_cibuildwheel_example LANGUAGES Fortran)
+
+add_library(minimal_fortran_scikit_build_core_cibuildwheel_example SHARED main.f90)
+set(library_directory "${SKBUILD_PLATLIB_DIR}/lib")
+install(TARGETS minimal_fortran_scikit_build_core_cibuildwheel_example DESTINATION library_directory)

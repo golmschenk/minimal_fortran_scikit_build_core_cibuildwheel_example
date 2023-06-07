@@ -1,0 +1,11 @@
+[project]
+name = "minimal_fortran_scikit_build_core_cibuildwheel_example"
+version = "0.1.0"
+requires-python = ">=3.7"
+
+[build-system]
+requires = ["scikit-build-core"]
+build-backend = "scikit_build_core.build"
+
+[tool.cibuildwheel]
+build = "cp37-*"
