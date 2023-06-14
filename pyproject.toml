@@ -4,7 +4,7 @@ version = "0.1.0"
 requires-python = ">=3.7"
 
 [build-system]
-requires = ["scikit-build-core"]
+requires = ["scikit-build-core", "fypp"]
 build-backend = "scikit_build_core.build"
 
 [tool.cibuildwheel]
