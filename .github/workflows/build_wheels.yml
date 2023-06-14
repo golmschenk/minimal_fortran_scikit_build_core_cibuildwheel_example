@@ -30,6 +30,7 @@ jobs:
         env:
           CMAKE_GENERATOR: MinGW Makefiles
           PIP_NO_CLEAN: "yes"
+          CIBW_BUILD_VERBOSITY: 3
 
       - uses: actions/upload-artifact@v3
         with:
